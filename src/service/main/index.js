@@ -14,7 +14,7 @@ import type { TLFabric } from '../../tl'
 import type { ApiConfig, ConfigType, StrictConfig, Emit, On, PublicKey } from './index.h'
 import type { ApiManagerInstance } from '../api-manager/index.h'
 
-const api57 = require('../../../schema/api-57.json')
+const api82 = require('../../../schema/api-82.json')
 const mtproto57 = require('../../../schema/mtproto-57.json')
 
 const apiConfig: ApiConfig = {
@@ -55,7 +55,7 @@ const configNormalization = (config: ConfigType): StrictConfig => {
       storage = PureStorage,
       publicKeys = publicKeysHex
     } = {},
-    schema = api57,
+    schema = api82,
     mtSchema = mtproto57,
   } = config
   const apiNormalized = { ...apiConfig, ...api }

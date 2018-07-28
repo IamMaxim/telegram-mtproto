@@ -1,6 +1,6 @@
 const { test } = require('tap')
 const { getFlags, Layout } = require('../lib/layout')
-const apiSchema = require('../schema/api-57.json')
+const apiSchema = require('../schema/api-82.json')
 
 const { has } = require('ramda')
 
